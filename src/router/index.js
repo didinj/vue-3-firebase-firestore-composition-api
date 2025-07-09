@@ -1,30 +1,30 @@
-import VueRouter from 'vue-router'
-import BoardList from '@/components/BoardList'
-import ShowBoard from '@/components/ShowBoard'
-import AddBoard from '@/components/AddBoard'
-import EditBoard from '@/components/EditBoard'
+import { createRouter, createWebHistory } from "vue-router";
+import UserList from "../views/UserList.vue";
+import AddUser from "../views/AddUser.vue";
+import EditUser from "../views/EditUser.vue";
 
-export default new VueRouter({
-  routes: [
-    {
-      path: '/',
-      name: 'BoardList',
-      component: BoardList
-    },
-    {
-      path: '/show-board/:id',
-      name: 'ShowBoard',
-      component: ShowBoard
-    },
-    {
-      path: '/add-board',
-      name: 'AddBoard',
-      component: AddBoard
-    },
-    {
-      path: '/edit-board/:id',
-      name: 'EditBoard',
-      component: EditBoard
-    }
-  ]
-})
+const routes = [
+  {
+    path: "/",
+    name: "UserList",
+    component: UserList
+  },
+  {
+    path: "/add",
+    name: "AddUser",
+    component: AddUser
+  },
+  {
+    path: "/edit/:id",
+    name: "EditUser",
+    component: EditUser,
+    props: true
+  }
+];
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+});
+
+export default router;

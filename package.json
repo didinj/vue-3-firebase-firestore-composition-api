@@ -1,55 +1,22 @@
 {
-  "name": "vue-firestore",
-  "version": "0.1.0",
+  "name": "vue3-firebase-crud",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "bootstrap-vue": "^2.2.2",
-    "eslint": "^6.8.0",
-    "eslint-plugin-vue": "^6.1.2",
-    "firebase": "^7.7.0",
-    "jquery": "^3.4.1",
-    "lodash.defaultsdeep": "^4.6.1",
-    "mixin-deep": "^2.0.1",
-    "set-value": "^3.0.1",
-    "vue": "^2.6.11",
-    "vue-router": "^3.1.5",
-    "webpack-bundle-analyzer": "^3.6.0",
-    "webpack-dev-server": "^3.10.1"
+    "@tailwindcss/vite": "^4.1.11",
+    "firebase": "^11.10.0",
+    "tailwindcss": "^4.1.11",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.1.2",
-    "@vue/cli-plugin-eslint": "^4.1.2",
-    "@vue/cli-service": "^3.0.5",
-    "babel-eslint": "^10.0.3",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+    "@vitejs/plugin-vue": "^6.0.0",
+    "vite": "^7.0.3"
+  }
 }
